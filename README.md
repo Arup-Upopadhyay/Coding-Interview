@@ -62,42 +62,11 @@ for how to get started. Let's do it! 🚀
 
 2.  **Run _one_ of the following** in your terminal, depending on your language:
 
-    -   Go:
-
-        ```
-        go test -run MemoryCache_Basic
-        ```
-
     -   JavaScript:
 
         ```
         npm install
         npm test -- --grep 'MemoryCache Basic'
-        ```
-
-    -   Python:
-
-        ```
-        python3 -m venv venv
-        ```
-
-        Activate using:
-
-        | Platform |   Shell    | Command to activate virtual environment |
-        | :------: | :--------: | :-------------------------------------- |
-        |  POSIX   |  bash/zsh  | `$ source <venv>/bin/activate`          |
-        | Windows  |  cmd.exe   | `C:\> <venv>\Scripts\activate.bat`      |
-        |          | PowerShell | `PS C:\> <venv>\Scripts\Activate.ps1`   |
-
-        ```
-        pip install -r requirements.txt
-        python3 -m unittest memoryCache_test.TestMemoryCache.test_basic
-        ```
-
-    -   Java:
-
-        ```
-        ./gradlew test --info --tests MemoryCacheTests.basic
         ```
 
     You should see a failing test!
