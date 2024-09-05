@@ -1,6 +1,6 @@
-# ONE Coding Exercise: `onecache`
+# Coding Exercise: `onecache`
 
-Imagine you've joined ONE (welcome!) and are working on your first big project.
+Imagine you've joined Cimpress Open (welcome!) and are working on your first big project.
 You've been tasked with implementing a new feature in our codebase.
 In the process, you run into some bugs coming from code that you didn't write.
 What do you do?
@@ -17,18 +17,18 @@ The docs below explain the code at a high level, and comments in the code explai
 
 This codebase implements a small **caching** library. Specifically, it provides:
 
-- A generic **`Cache` interface** that abstracts away different cache backends,
-  e.g. Redis vs. in-memory. It exposes methods like `get`, `set`, and `clear`.
+-   A generic **`Cache` interface** that abstracts away different cache backends,
+    e.g. Redis vs. in-memory. It exposes methods like `get`, `set`, and `clear`.
 
-- A **`RedisCache` implementation** of the `Cache` interface.
-  This code is not included here, but a stub is shown for illustration.
+-   A **`RedisCache` implementation** of the `Cache` interface.
+    This code is not included here, but a stub is shown for illustration.
 
-- A **`MemoryCache` implementation** of the `Cache` interface using simple
-  in-memory data structures (like dictionaries and linked lists).
-  Supports capping memory usage with a `maxItems` parameter,
-  and evicts the least recently read items when over capacity.
+-   A **`MemoryCache` implementation** of the `Cache` interface using simple
+    in-memory data structures (like dictionaries and linked lists).
+    Supports capping memory usage with a `maxItems` parameter,
+    and evicts the least recently read items when over capacity.
 
-- A **`Scheduler` interface** that manages scheduled background tasks.
+-   A **`Scheduler` interface** that manages scheduled background tasks.
 
 `MemoryCache` has a few bugs and doesn't yet implement support for expiring items.
 
@@ -62,43 +62,43 @@ for how to get started. Let's do it! 🚀
 
 2.  **Run _one_ of the following** in your terminal, depending on your language:
 
-    - Go:
+    -   Go:
 
-      ```
-      go test -run MemoryCache_Basic
-      ```
+        ```
+        go test -run MemoryCache_Basic
+        ```
 
-    - JavaScript:
+    -   JavaScript:
 
-      ```
-      npm install
-      npm test -- --grep 'MemoryCache Basic'
-      ```
+        ```
+        npm install
+        npm test -- --grep 'MemoryCache Basic'
+        ```
 
-    - Python:
+    -   Python:
 
-      ```
-      python3 -m venv venv
-      ```
+        ```
+        python3 -m venv venv
+        ```
 
-      Activate using:
+        Activate using:
 
-      | Platform |    Shell   | Command to activate virtual environment |
-      |:--------:|:----------:|:----------------------------------------|
-      | POSIX    | bash/zsh   |     `$ source <venv>/bin/activate`      |
-      | Windows  | cmd.exe    |   `C:\> <venv>\Scripts\activate.bat`    |
-      |          | PowerShell |  `PS C:\> <venv>\Scripts\Activate.ps1`  |
+        | Platform |   Shell    | Command to activate virtual environment |
+        | :------: | :--------: | :-------------------------------------- |
+        |  POSIX   |  bash/zsh  | `$ source <venv>/bin/activate`          |
+        | Windows  |  cmd.exe   | `C:\> <venv>\Scripts\activate.bat`      |
+        |          | PowerShell | `PS C:\> <venv>\Scripts\Activate.ps1`   |
 
-      ```
-      pip install -r requirements.txt
-      python3 -m unittest memoryCache_test.TestMemoryCache.test_basic
-      ```
+        ```
+        pip install -r requirements.txt
+        python3 -m unittest memoryCache_test.TestMemoryCache.test_basic
+        ```
 
-    - Java:
+    -   Java:
 
-      ```
-      ./gradlew test --info --tests MemoryCacheTests.basic
-      ```
+        ```
+        ./gradlew test --info --tests MemoryCacheTests.basic
+        ```
 
     You should see a failing test!
     This is the first bug we'd like you to figure out & fix. 🐞
@@ -107,4 +107,5 @@ for how to get started. Let's do it! 🚀
     about the format or logistics of this interview.
 
 4.  When you're ready, go ahead fire up your editor and **start debugging**! 👩🏽‍💻
+
 # Coding-Interview
